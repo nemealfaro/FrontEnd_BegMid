@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+.container{
+    /* el ancho siempre es % porque si cambia de dispositivo se ajusta  */
+    width: 90%;
+    /* height: 2000px; */
+    /* maximo ancho y alto(va a tener un 90% de 900 px) */
+    max-width: 900px;
+    max-height: 2000px;
+    background-color: lightpink;
+    /* para centrar el contenedor padre 10px arriba y autom a los lados */
+    margin: 10px auto;
+    /* poner relleno a la pagina web */
+    padding: 20px;
+    /* borde redondeado */
+    border-radius: 10px;
+    /* poner una sombra a toda la pagina web arriba derecha abajo e izquiera | */
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+
+}
+
+header img{
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+header h1{
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+header p{
+    font-style: italic;
+}
+
+nav ul{
+    background-color: lightcoral;
+    border-radius: 5px;
+    /* hacer flexible el contenido y centrarlo */
+    display: flex;
+    justify-content: center;
+    /* quitar puntos */
+    list-style: none;
+    padding: 15px 0;
+    margin: 10px;
+    
+}
+
+nav li{
+    margin: 0 20px;
+}
+
+nav a{
+    text-decoration: none; /*quitar raya baja del link */
+    color: black;
+    font-weight: bold; /*letra en negrita*/
+}
+
+nav a:hover{ /* efecto al tocar los enlaces*/
+    background-color: white;
+    cursor: pointer;
+    font-size: 40px; /*letra grande*/
+}
+
+main{
+    padding: 20px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    padding: 20px; /*relleno ubica contenido*/
+    margin: 0 10px; /*separa las tarjetas*/
+    background-color: lightcoral;
+    flex: 1; /*distribuye a cada tarjeta el mismo ancho*/
+    border-radius: 5px;    
+    text-align: center;
+    justify-content: center;
+}
+
+.card article img{
+    height: 100px;
+    max-width: 100%; /*se haga lo mas ancho del contenedor en el que esta*/
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: lightcoral;
+    border-radius: 10px;
+}
+
+.social{
+    margin: 50px;
+}
+
+.social p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.links a{
+    margin: 30px;
+}
+
+.links a i{
+    font-size: 28px;
+    color: white;
+}

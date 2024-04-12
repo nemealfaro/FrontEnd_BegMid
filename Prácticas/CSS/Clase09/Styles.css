@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html{
+
+}
+
+
+body{
+    background-color: #e6e6e6;
+}
+
+/*Medidas para 3 contenedores principales*/
+header, main, footer{
+    background-color: white;
+    max-width: 1000px;
+    width: 90%;
+    margin: 10px auto; /*10px arriba y abajo*/
+}
+
+/*Encabezado seccion navegacion */
+header nav{
+    background-color: #528fd5;
+    overflow: hidden; /*Propiedad para limpiar u ocultar cosas*/
+}
+
+/*Encabezado seccion navegacion lista desordenada ul*/
+header nav ul{
+    list-style: none;
+}
+
+/*Encabezado seccion navegacion lista desordenada li */
+header nav ul li{
+    float: left;
+
+}
+
+/*Encabezado navegacion lista li enlance (a) */
+header nav ul li a{
+    display: block; /*Convertir inline a bloque*/
+    padding: 15px;
+    color: white;
+    text-decoration: none; 
+}
+
+/*Agregar en la navegacion un efecto, cambia de color al pasar el mouse*/
+header nav ul li a:hover{
+    background-color: #75acec;
+}
+
+/*Inicia el Main*/
+
+.articulos{
+    width: 68.5%;
+    float: left;
+    margin-left: 1.5%;
+}
+
+aside{
+    width: 30%;
+    float: left;
+    background-color: bisque;
+}
+
+footer{
+    clear: both; /*Limpiar el bloque*/
+    background-color: black;
+    color: white;
+}

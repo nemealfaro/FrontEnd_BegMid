@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-boxs;
+}
+
+body{
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.contenedor{
+    background-color: white;
+    width: 90%;
+    margin: 10px auto;
+}
+
+header{
+    background-color: aqua;
+    padding: 50px;
+    text-align: center;
+}
+
+nav{
+    display: flex; /*hacer cajas flexibles*/
+    background-color: #333;
+    justify-content: flex-start; /*Colocar palabras al inicio*/
+}
+
+nav ul{
+    display: flex; /*hacer cajas flexibles*/
+    list-style: none; /*quitar los puntos de la lista*/
+    
+}
+
+nav ul li a{
+    padding: 20px; /*Separar palabras*/
+    color: white;
+    text-decoration: none; /*quitar enlaces de a*/
+
+
+}
+
+main{
+    background-color: blueviolet;
+    display: flex;  /*hacer cajas flexibles*/
+    flex-wrap: wrap; /*permite fluir el contenido */
+    height: 800px;
+
+}
+
+aside{
+    flex: calc(30% - 5px) ; /*ancho que ocupa del main*/ /*calc sirve para hacer la conversion y que la pagina no se desborde*/
+    background-color: khaki;
+    margin-right: 5px;
+    
+}
+
+section{
+    flex: 70%; /*ancho que ocupa del main  */
+    background-color: orange;
+    text-align: center;
+}
+
+p{
+    padding: 20px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*Responsive*/
+
+@media (max-width:700px) {
+    nav, main{
+        flex-direction: column;
+    }
+    
+}

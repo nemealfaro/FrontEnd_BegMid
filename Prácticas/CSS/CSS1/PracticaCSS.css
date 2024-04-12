@@ -1,0 +1,19 @@
+div {
+    height: 200px;
+    width: 200px ;
+    margin: 20px;
+    padding: 20px;
+    border: 40px solid red;
+    color:aliceblue;
+    background-color: black;
+}
+
+.cajazapatos {
+    height: 200px;
+    width: 200px ;
+    margin: 20px;
+    padding: 20px;
+    border: 40px solid purple;
+    color:aliceblue;
+    background-color: orange;
+}

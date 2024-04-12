@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+    width: 90%;
+    /* height: 950px; */
+    margin: 20px auto;
+    padding: 5px;
+    max-width: 900px;
+    max-height: 1200px;
+    background-color: blueviolet;
+}
+
+header{
+    padding: 5px;
+    text-align: center;
+    background-color: palegreen;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 10px; /*espacio entre cajas*/
+}
+
+main{
+    height: 700px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap; /*permite fluir el contenido */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: lightcoral;
+}
+
+aside{
+    flex: calc(30% - 5px); /*ancho que ocupa del main*/ /*calc sirve para hacer la conversion y que la pagina no se desborde*/
+    margin-right: 5px;
+    background-color: beige;
+}
+
+p{
+    padding: 5px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+section{
+    flex: 65%; /*ancho que ocupa del main  */
+    background-color: orange;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px auto;
+    background-color: aquamarine;
+}
+
+.card{
+    padding: 10px;
+    margin: 8px auto;
+    width: 60%;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: cyan;
+}
+
+footer{
+    margin: 10px auto;
+    background-color: grey;
+}

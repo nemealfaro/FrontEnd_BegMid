@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 90%;
+    height: 900px;
+    margin: 20px auto;
+    padding: 5px;
+    display: grid; /*aplicar grid*/
+    grid-template-rows: 1fr 1fr 1fr; /*crear 3 filas*/
+    row-gap: 10px; /*separa las 3 filas*/
+    background-color: aquamarine;
+}
+
+h2{
+    margin-top: 15px;
+    text-align: center;
+}
+
+header{
+    padding: 5px;
+    height: 100px;
+    background-color: lightgoldenrodyellow;
+}
+
+nav{
+    margin: 5px;
+    display: grid;
+    justify-content: center;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    list-style: none;
+}
+
+nav ul li{
+    text-decoration: none;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    text-align: center;
+}
+
+main{
+    height: 700px;
+    display: grid; /*aplicamos grid*/
+    grid-template-columns: 1fr 1fr; /*creamos 2 columnas*/
+    background-color: lightsalmon;
+}
+
+aside{
+    grid-colum: 2/3; /*abarca desde linea 2 a 3 */ 
+    display: grid;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+}
+
+section{
+    grid-column: 2/3;
+    display: grid;
+    background-color: lightslategray;
+}
+
+.card-container{
+    height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; /*crea filas con sus medidas*/
+    row-gap: 10px;
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightseagreen;
+}
+
+footer{
+    background-color: lightskyblue;
+}

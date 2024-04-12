@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-boxs;
+}
+
+body{
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.contenedor{
+    background-color: white;
+    width: 90%;
+    margin: 10px auto;
+}
+
+header{
+    background-color: aqua;
+}
+
+nav{
+    background-color: #333;
+}
+
+main{
+    background-color: blueviolet;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}

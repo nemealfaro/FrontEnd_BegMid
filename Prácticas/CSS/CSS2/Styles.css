@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: gray;
+}
+
+/*Agrega todas las reglas de css a todos los contenedores hijos de contenedor*/
+.contenedor > *{
+    border: 1px solid black;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1400px;
+    margin: 10px auto;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+
+.header{
+    grid-column: 1/-1;
+    /*grid-column: span 6;*/ /*hacen lo mismo se desplaza hasta el 6*/
+    background-color: black;
+    color: white;
+}
+
+.content{
+   grid-column: span 3;
+}
+
+.sidebar{
+    grid-column: span 2;
+}
+
+.sidebar img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.footer{
+    grid-column: 1/-1; 
+    background-color: black;
+    color: white;
+}
+

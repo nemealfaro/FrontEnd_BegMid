@@ -1,0 +1,24 @@
+/*Display flex va en el contenedor padre
+    con una direccion automatica row*/
+
+
+.contenedor{
+    background-color: #f57963;
+    border: 1px solid black;
+    padding: 5px;
+    display: flex; /*hacer cajas flexibles*/
+    flex-direction: row; /*cajas en fila*/
+    flex-wrap: wrap; /*permite a las cajas acomodarse*/ 
+    justify-content: space-around; /*Ubicar el contenido lados-centro*/
+
+}
+
+.box{
+    border: 1px solid black; /*borde*/
+    font-size: 14px; /*tamaño letra*/
+    margin: 15px; /*margen separacion*/
+    background-color: #ffb17e; 
+    text-align: center;
+    /*width: 800px;*/
+}
+
